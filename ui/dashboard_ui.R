@@ -4,6 +4,7 @@ fluidPage(
                        tabsetPanel(
                          tabPanel(value = 'Subtab 1',
                                   title = 'SUB TAB 1',
+                                  # fluidRow(column(4,dataTableOutput('amortisation_table'))),
                                   uiOutput(outputId = "subtab1_ui")
                          ),
                          tabPanel(value = 'Subtab 2',

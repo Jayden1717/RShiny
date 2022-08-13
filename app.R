@@ -10,12 +10,12 @@ library(shinydashboard)
 
 #Run UI scripts
 ui <- eval(
-    parse("ui/dashboard.R")
+    parse("ui/dashboard_ui.R")
 )
 
 #Run server scripts
 server <- function(input, output, session) {
-    eval(parse('server/dashboard.R'))
+    eval(parse('server/dashboard_server.R'))
     eval(parse('ui/home/subtab1_ui.R'))
 }
 
