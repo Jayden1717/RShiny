@@ -145,12 +145,14 @@ for(i in 1:num_payments) {
       monthly_payment_schedule = monthly_payment_schedule,
       interest_component_schedule = interest_component_schedule,
       principal_component_schedule = principal_component_schedule,
-      remaining_loan_amount = remaining_loan_amount
+      remaining_loan_amount = remaining_loan_amount,
+      period_count = i %% 12
       
     )
   )
   
 }
+
 
 
 
